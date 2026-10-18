@@ -33,9 +33,7 @@ Enquanto nos KPI's de contratações homologadas temos:
 
 ![KPIs de Contratações Homologadas](_static/img/visao-geral-kpi-homologadas.png)
 
-![KPIs de Contratações Homologadas - Detalhe](_static/img/visao-geral-kpi-homologadas-2.png)
-
-Esses indicadores gerais têm como objetivo fornecer uma visão rápida e consolidada do comportamento das contratações públicas registradas no PNCP, permitindo identificar o volume financeiro movimentado, a quantidade de contratações realizadas, o quantitativo de itens envolvidos e a abrangência dos portais utilizados.
+Esses indicadores gerais têm como objetivo fornecer uma visão rápida e consolidada do comportamento das contratações públicas registradas no PNCP, permitindo identificar o volume financeiro movimentado, a quantidade de contratações realizadas, o quantitativo de itens envolvidos e a abrangência dos portais utilizados. A comparação entre os valores publicados e homologados possibilita compreender a diferença entre a intenção inicial de contratação e os valores efetivamente contratados, servindo como ponto de partida para análises mais detalhadas ao longo do painel.
 
 :::{important}
 **Publicado ≠ Homologado.** O valor publicado representa a *intenção* de contratação; o valor homologado representa o que foi *efetivamente contratado*. A diferença entre eles é um dos principais indicadores de eficiência do processo licitatório.
@@ -47,7 +45,9 @@ Esses indicadores gerais têm como objetivo fornecer uma visão rápida e consol
 
 Aqui temos um gráfico de linha temporal de Valor Total de Contratações x Data de Publicação que compara os valores publicados e homologados ano à ano. Os valores em Reais (R$) podem ser alterados para Quantidade de contratações Publicadas e Homologadas.
 
-![Tendência Temporal de Contratações](_static/img/visao-geral-tendencia-temporal.png)
+![Tendência Temporal de Contratações - Valor em R$](_static/img/visao-geral-tendencia-temporal.png)
+
+![Tendência Temporal de Contratações - Quantidade](_static/img/visao-geral-tendencia-temporal-qtd.png)
 
 A ideia desse gráfico é verificar a evolução financeira e quantitativa das contratações ao longo dos anos, permitindo uma análise histórica do crescimento, redução ou estabilidade das compras públicas registradas no PNCP. A comparação entre os valores publicados e homologados ajuda a identificar o comportamento entre a intenção inicial de contratação e o volume efetivamente homologado, possibilitando observar tendências, mudanças de padrão ao longo do tempo e possíveis oscilações relevantes no volume de contratações públicas.
 
@@ -56,8 +56,6 @@ A ideia desse gráfico é verificar a evolução financeira e quantitativa das c
 ## Detalhamento por tempo e UF
 
 ![Detalhamento por UF - Matriz](_static/img/visao-geral-detalhamento-uf.png)
-
-![Detalhamento por UF - Drill-down](_static/img/visao-geral-detalhamento-uf-2.png)
 
 Aqui a visualização é de uma matriz que compara o valor publicado e homologado por ano de publicação, com um drill de mês de publicação, em seguida de UF do Órgão.
 
@@ -91,9 +89,11 @@ Ao clicar em **Total Publicado**, todas as visualizações abaixo passam a exibi
 
 Aqui temos um mapa coloroplético do Brasil pelo valor publicado, onde a cor mais escura informa o estado (UF) com maior concentração de contratos Publicados.
 
-![Mapa de Distribuição por UF](_static/img/visao-geral-mapa-distribuicao.png)
+![Mapa de Distribuição por UF - Publicado](_static/img/visao-geral-mapa-distribuicao.png)
 
-Essa visualização permite identificar a distribuição geográfica das contratações públicas entre os estados brasileiros, evidenciando as regiões com maior concentração financeira de contratos publicados e homologados.
+![Mapa de Distribuição por UF - Homologado](_static/img/visao-geral-mapa-distribuicao-homologado.png)
+
+Essa visualização permite identificar a distribuição geográfica das contratações públicas entre os estados brasileiros, evidenciando as regiões com maior concentração financeira de contratos publicados e homologados. Quanto mais intensa a tonalidade apresentada no mapa, maior é o volume financeiro associado à respectiva Unidade Federativa. A análise espacial facilita a percepção de padrões regionais, concentração de investimentos públicos e diferenças de comportamento entre os estados, permitindo uma visão territorial mais clara da dinâmica das contratações públicas no país.
 
 :::{note}
 **Leitura do mapa coroplético:** quanto mais escura a tonalidade de um estado, maior é o volume financeiro de contratações associado àquela Unidade Federativa. Estados em cinza claro ou branco indicam baixo volume ou ausência de registros no período selecionado.
@@ -123,7 +123,9 @@ Essa análise permite compreender como as contratações públicas estão distri
 
 Temos aqui um gráfico tree map que plota os valores em reais (R$) pela Modalidade de Contratação (Pregão Eletrônico, Concorrência - Eletrônica, Inexigibilidade, Dispensa, Credenciamento, Concorrência Presencial etc.).
 
-![Modalidade de Contratação - Tree Map](_static/img/visao-geral-modalidade-treemap.png)
+![Modalidade de Contratação - Tree Map (Publicado)](_static/img/visao-geral-modalidade-treemap.png)
+
+![Modalidade de Contratação - Tree Map (Homologado)](_static/img/visao-geral-modalidade-treemap-homologado.png)
 
 Essa visualização permite identificar quais modalidades de contratação concentram os maiores volumes financeiros dentro do PNCP, facilitando a compreensão sobre os mecanismos mais utilizados pela administração pública para realização das contratações. Quanto maior a área representada no gráfico, maior é o valor financeiro associado à respectiva modalidade. A análise auxilia na percepção da predominância de modalidades como Pregão Eletrônico, Dispensa e Inexigibilidade, além de permitir comparações rápidas entre os diferentes modelos de contratação utilizados pelos órgãos públicos.
 
@@ -139,7 +141,11 @@ E por último temos o total publicado por Situação de Contratação. Essa visu
 
 A Situação de Contratação pode ser: **Divulgada no PNCP**, **Suspensa**, **Anulada**, **Revogada**.
 
-![Situação de Contratação](_static/img/visao-geral-situacao-contratacao.png)
+![Situação de Contratação - Valores em R$](_static/img/visao-geral-situacao-contratacao.png)
+
+![Situação de Contratação - Percentual](_static/img/visao-geral-situacao-percentual.png)
+
+![Situação de Contratação - Quantidade](_static/img/visao-geral-situacao-quantidade.png)
 
 Essa análise permite compreender a distribuição das contratações públicas conforme a situação administrativa em que se encontram dentro do PNCP, evidenciando o volume financeiro, a participação percentual e a quantidade de contratos associados a cada status. A visualização auxilia na identificação da predominância de contratações efetivamente divulgadas no portal, ao mesmo tempo em que mantém transparência sobre processos suspensos, anulados ou revogados, possibilitando uma leitura mais clara do ciclo e da situação operacional das contratações públicas registradas na plataforma.
 

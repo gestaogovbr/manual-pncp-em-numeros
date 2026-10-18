@@ -19,8 +19,6 @@ Os filtros da página estão organizados em dois grupos principais: **Contrataç
 
 Os filtros de contratação definem o universo principal da análise. Eles permitem recortar os dados por identificação da contratação, período de publicação, órgão responsável, localização, modalidade, instrumento, situação e indicadores de qualidade.
 
-![Filtros de Contratação - Publicadas](_static/img/publicadas-filtros-contratacao.png)
-
 **Filtros disponíveis:**
 
 - ID Contratação

@@ -51,7 +51,9 @@ Essa visualização permite identificar quais fornecedores estrangeiros concentr
 
 Por fim, a página apresenta um gráfico de linha de Valor Total de Contratações x Data de Publicação, permitindo acompanhar a evolução dos valores homologados internacionais ao longo dos anos.
 
-![Tendência Temporal - Internacional](_static/img/homologadas-tendencia-temporal-internacional.png)
+![Tendência Temporal - Internacional (Valor em R$)](_static/img/homologadas-tendencia-temporal-internacional.png)
+
+![Tendência Temporal - Internacional (Quantidade)](_static/img/homologadas-tendencia-temporal-internacional-qtd.png)
 
 A visualização pode ser alternada entre valores em reais (R$) e quantidade de contratações homologadas, possibilitando analisar tanto o crescimento financeiro quanto o volume de registros associados a fornecedores internacionais.
 

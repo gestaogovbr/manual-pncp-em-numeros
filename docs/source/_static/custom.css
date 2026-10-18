@@ -20,11 +20,12 @@
 .rst-content img,
 .md-content img,
 article img {
-    width: 100% !important;
-    max-width: 100% !important;
+    width: auto !important;
+    max-width: min(640px, 100%) !important;
+    max-height: 360px !important;
     height: auto !important;
     display: block;
-    margin: 28px auto !important;
+    margin: 22px auto !important;
     border: 1px solid #d1d5db;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);

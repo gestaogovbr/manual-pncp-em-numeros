@@ -102,7 +102,9 @@ Essa visualização permite identificar os fornecedores que concentram os maiore
 
 Temos agora um gráfico de linha de Valor Total de Contratações x Data de Publicação, mostrando a evolução dos valores homologados ao longo dos anos. A visualização em reais (R$) pode ser alternada para quantidade de contratações homologadas.
 
-![Tendência Temporal - Homologadas](_static/img/homologadas-tendencia-temporal.png)
+![Tendência Temporal - Homologadas (Valor em R$)](_static/img/homologadas-tendencia-temporal.png)
+
+![Tendência Temporal - Homologadas (Quantidade)](_static/img/homologadas-tendencia-temporal-qtd.png)
 
 Essa análise permite acompanhar a evolução histórica das contratações homologadas, identificando crescimento, redução, estabilidade ou oscilações relevantes no volume financeiro e na quantidade de resultados. O gráfico ajuda a compreender como o comportamento das homologações se altera ao longo do tempo e permite avaliar a dinâmica dos resultados em diferentes períodos.
 
@@ -188,6 +190,8 @@ Por último, a página apresenta uma tabela com detalhamento das contratações 
 ![Tabela de Contratações por Fornecedor](_static/img/homologadas-tabela-fornecedor.png)
 
 Essa tabela permite sair da visão agregada e consultar informações mais específicas sobre cada contratação homologada e seu respectivo fornecedor. O link para o edital no PNCP garante rastreabilidade e permite consulta direta à fonte oficial.
+
+![Consulta à Contratação no Portal PNCP](_static/img/homologadas-edital-pncp.png)
 
 No campo **Aplicação da Margem de Preferência**, há um ícone de informação que abre uma visualização complementar com:
 

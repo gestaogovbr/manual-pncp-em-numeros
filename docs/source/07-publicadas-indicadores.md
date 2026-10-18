@@ -67,6 +67,8 @@ A visualização apresenta uma tabela de detalhamento das contratações por ór
 
 Essa tabela permite que o usuário saia da visão agregada e acesse informações mais específicas sobre cada contratação publicada. O campo com o número da contratação contém link direto para o edital no PNCP, permitindo rastreabilidade e consulta à fonte oficial.
 
+![Consulta ao Edital no Portal PNCP](_static/img/publicadas-edital-pncp.png)
+
 :::{tip}
 Clique no número da contratação na tabela para acessar diretamente o edital publicado no **portal PNCP** (pncp.gov.br). Esse link garante rastreabilidade e permite consulta à fonte oficial sem necessidade de busca manual.
 :::
