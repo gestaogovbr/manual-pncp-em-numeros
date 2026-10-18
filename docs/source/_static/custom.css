@@ -1,84 +1,256 @@
-/* ── Largura total do conteúdo ─────────────────────────────────────────────── */
+/* ==========================================================================
+   Padrão Visual Compartilhado DELOG / MGI — Manual PNCP em Números
+   Baseado em: github.com/emilix10-bit/template-compartilhado + Manual API Compras
+   ========================================================================== */
+
+/* 1. Largura confortável do contêiner principal do Read the Docs */
 .wy-nav-content {
+    max-width: 1150px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* 2. Remove o limite de largura do bloco de texto interno */
+.rst-content {
+    max-width: none !important;
+}
+
+/* 3. Imagens do Manual — Sombreamento, Borda e Lupa com Hover (Padrão Êmili) */
+.rst-content img,
+.md-content img,
+article img {
+    width: 100% !important;
     max-width: 100% !important;
-    margin: auto !important;
-}
-
-@media screen and (min-width: 768px) {
-    /* Estrutura principal ocupa tela inteira */
-    html, body, .wy-grid-for-nav {
-        height: 100vh !important;
-        overflow: hidden !important;
-    }
-
-    /* Menu lateral fixo com rolagem própria */
-    .wy-nav-side {
-        height: 100vh !important;
-        overflow-y: auto !important;
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
-    }
-
-    /* Conteúdo é a única área com rolagem */
-    .wy-nav-content-wrap {
-        margin-left: 300px !important;
-        height: 100vh !important;
-        overflow-y: auto !important;
-    }
-
-    .wy-nav-content {
-        height: auto !important;
-        min-height: 100% !important;
-    }
-}
-
-/* ── Imagens ───────────────────────────────────────────────────────────────── */
-article img,
-.wy-nav-content img {
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
-    max-width: 100%;
-    margin: 1rem auto;
+    height: auto !important;
     display: block;
+    margin: 28px auto !important;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    cursor: zoom-in !important; /* Transforma o mouse em uma lupa (+) ao passar por cima */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* ── Destaque amarelo (role customizada) ───────────────────────────────────── */
+.rst-content img:hover,
+.md-content img:hover,
+article img:hover {
+    transform: scale(1.01); /* Micro-zoom suave no hover para indicar que é clicável */
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* --- ESTILOS DO POPUP / LIGHTBOX (Abrir e fechar na mesma tela) --- */
+
+/* O contêiner do Popup (camada escura de fundo) */
+#lightbox-overlay {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.88);
+    cursor: zoom-out; /* Lupa (-) para fechar ao clicar no fundo */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#lightbox-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+/* A imagem ampliada dentro do popup */
+#lightbox-image {
+    max-width: 92% !important;
+    max-height: 80vh !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    border: 4px solid #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.65);
+    cursor: zoom-out !important; /* Permite fechar também clicando na imagem */
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    background-color: #ffffff;
+}
+
+#lightbox-overlay.active #lightbox-image {
+    transform: scale(1);
+}
+
+/* Botão superior direito de fechar (X) */
+#lightbox-close {
+    position: absolute;
+    top: 18px;
+    right: 28px;
+    color: #ffffff;
+    font-size: 46px;
+    line-height: 1;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+    user-select: none;
+    z-index: 100000;
+    background: rgba(0, 0, 0, 0.45);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lightbox-close:hover {
+    color: #ffdddd;
+    background: rgba(217, 83, 79, 0.85);
+    transform: scale(1.1);
+}
+
+/* Barra inferior do popup com legenda e botão explícito para fechar */
+#lightbox-footer {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    max-width: 92%;
+    color: #f1f5f9;
+    font-size: 14px;
+    text-align: center;
+}
+
+#lightbox-caption {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#lightbox-close-btn {
+    background-color: #d9534f;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+#lightbox-close-btn:hover {
+    background-color: #c9302c;
+    transform: scale(1.04);
+}
+
+/* 4. Permite a quebra de linha para os títulos (texto azul) e links longos no menu lateral */
+.wy-menu-vertical p.caption,
+.wy-menu-vertical span.caption-text,
+.wy-menu-vertical a {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    line-height: 1.4 !important;
+}
+
+.wy-menu-vertical p.caption {
+    margin-bottom: 8px !important;
+}
+
+/* 5. Destaque amarelo (role customizada) */
 .destaque-amarelo-claro {
     background-color: #fff9c4;
     padding: 0 3px;
     border-radius: 3px;
 }
 
-/* ── Tabelas ───────────────────────────────────────────────────────────────── */
-table.docutils {
-    width: 100%;
-    border-collapse: collapse;
+/* 6. Tabelas responsivas e legíveis */
+.wy-table-responsive {
+    overflow-x: auto !important;
+    margin-bottom: 24px !important;
+    border-radius: 6px;
+    border: 1px solid #e1e4e8;
 }
 
-table.docutils thead tr {
-    background-color: #2980b9;
-    color: #fff;
+.wy-table-responsive table {
+    margin-bottom: 0 !important;
+    width: 100% !important;
+    table-layout: auto !important;
 }
 
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    vertical-align: top !important;
+    padding: 10px 14px !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+}
+
+.wy-table-responsive table thead th,
+table.docutils thead th {
+    white-space: nowrap !important;
+    background-color: #0056b3 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    border-bottom: 2px solid #004085 !important;
+}
+
+.wy-table-responsive table tbody tr:nth-child(even),
 table.docutils tbody tr:nth-child(even) {
-    background-color: #f5f5f5;
+    background-color: #f8f9fa !important;
 }
 
-table.docutils td,
-table.docutils th {
-    padding: .5rem .75rem;
-    border: 1px solid #ddd;
+.wy-table-responsive table tbody tr:hover,
+table.docutils tbody tr:hover {
+    background-color: #eef4fb !important;
 }
 
-/* ── Botão de alternar tema claro/escuro ──────────────────────────────────── */
-.theme-switcher {
-    bottom: 75px !important;
-    right: 20px !important;
-    z-index: 9999 !important;
+/* 7. Tipografia e hierarquia de títulos */
+.rst-content h1 {
+    font-weight: 700 !important;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #1a202c;
 }
 
-/* ── Ocultar anúncios do Read the Docs (EthicalAds) ───────────────────────── */
+.rst-content h2 {
+    margin-top: 32px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #0056b3;
+}
+
+.rst-content h3 {
+    margin-top: 24px;
+    color: #2d3748;
+}
+
+.rst-content h4 {
+    margin-top: 20px;
+    color: #1e293b;
+    font-weight: 700;
+}
+
+/* Citações de metadados / introduções */
+.rst-content blockquote {
+    border-left: 4px solid #0056b3;
+    background-color: #f8fafc;
+    padding: 12px 18px;
+    margin: 16px 0;
+    border-radius: 0 6px 6px 0;
+    color: #334155;
+}
+
+/* 8. Ocultar anúncios do Read the Docs (EthicalAds) */
 #ethical-ad-placement,
 .ethical-rtd,
 .ethical-sidebar,
@@ -94,3 +266,45 @@ div[class*="ethical"],
     padding: 0 !important;
 }
 
+/* 9. Regras para Impressão / Salvar em PDF (window.print) */
+@media print {
+    .wy-nav-side,
+    .wy-nav-top,
+    .rst-versions,
+    .rst-other-versions,
+    readthedocs-flyout,
+    readthedocs-notification,
+    readthedocs-search,
+    readthedocs-hotkeys,
+    [class*="readthedocs"],
+    [id*="readthedocs"],
+    #rtd-sidebar,
+    .wy-breadcrumbs-aside,
+    footer .rst-footer-buttons,
+    .top-accessibility-bar,
+    .bottom-print-bar,
+    #lightbox-overlay,
+    button[onclick*="window.print"],
+    button[onclick*="Fonte"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+    }
+    .wy-nav-content-wrap {
+        margin-left: 0 !important;
+        background: #ffffff !important;
+    }
+    .wy-nav-content {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .rst-content img {
+        max-height: 450px !important;
+        width: auto !important;
+        page-break-inside: avoid;
+    }
+}

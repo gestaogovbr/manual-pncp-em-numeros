@@ -23,13 +23,9 @@ version = '1.0'
 # ── Extensões ─────────────────────────────────────────────────────────────────
 extensions = [
     'sphinx.ext.duration',
-    'sphinx_rtd_dark_mode',
     'myst_parser',
     'sphinx_copybutton',
 ]
-
-# Dark mode ligado por padrão
-default_dark_mode = True
 
 source_suffix = {
     '.rst': 'restructuredtext',
@@ -44,7 +40,7 @@ language = 'pt_BR'
 html_theme = 'sphinx_rtd_theme'
 
 html_theme_options = {
-    'logo_only': True,
+    'logo_only': False,
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
@@ -58,9 +54,16 @@ html_theme_options = {
 # html_logo e html_favicon removidos por recomendação do período eleitoral
 
 html_static_path = ['_static']
-html_css_files = ['custom.css']
+html_css_files = [
+    'custom.css',
+    'extra.css',
+]
+html_js_files = [
+    'custom.js',
+    'font-size.js',
+]
 
-html_title = 'PNCP em Números'
+html_title = 'Manual — PNCP em Números'
 html_short_title = 'PNCP em Números'
 
 # ── MyST Parser ───────────────────────────────────────────────────────────────
@@ -70,4 +73,4 @@ myst_enable_extensions = [
     'tasklist',
     'html_image',
 ]
-myst_heading_anchors = 3
+myst_heading_anchors = 4

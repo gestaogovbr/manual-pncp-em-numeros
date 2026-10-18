@@ -1,8 +1,24 @@
-# Guia de Utilização — PNCP em Números
+<div class="top-accessibility-bar" style="display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin: 10px 0;">
+  <span style="font-size: 14px; color: #555; font-weight: bold;">Tamanho do texto:</span>
+  <button onclick="diminuirFonte()" title="Diminuir texto" style="padding: 6px 12px; font-weight: bold; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background: #f8f9fa;">A-</button>
+  <button onclick="resetarFonte()" title="Tamanho normal" style="padding: 6px 12px; font-weight: bold; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background: #f8f9fa;">A</button>
+  <button onclick="aumentarFonte()" title="Aumentar texto" style="padding: 6px 12px; font-weight: bold; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background: #f8f9fa;">A+</button>
+  
+  <button onclick="window.print()" style="background-color: #0056b3; color: white; padding: 6px 16px; border: none; border-radius: 5px; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.2); margin-left: 10px;">
+    🖨️ Imprimir ou baixar esta página
+  </button>
+</div>
 
-> **Tipo:** Manual
-> **Público-alvo:** Analistas, gestores e demais usuários do painel PNCP em Números
+<p style="font-weight: bold; color: #d9534f; margin-top: -5px; margin-bottom: 20px;">PÚBLICO-ALVO: ANALISTAS, GESTORES E USUÁRIOS DO PAINEL PNCP EM NÚMEROS</p>
+
+# MANUAL COMPLETO: GUIA DE UTILIZAÇÃO — PNCP EM NÚMEROS
+
+> **Tipo:** Manual  
+> **Público-alvo:** Analistas, gestores e demais usuários do painel PNCP em Números  
 > **Objetivo:** Guiar o usuário na leitura, interpretação e análise dos indicadores e visualizações do painel PNCP em Números.
+
+**VERSÃO 1.0 – Mai/26**  
+Ministério da Gestão e da Inovação em Serviços Públicos – MGI
 
 O **PNCP em Números** é um painel desenvolvido em Power BI que consolida dados do Portal Nacional de Contratações Públicas (PNCP), permitindo a análise de contratações públicas brasileiras sob diferentes perspectivas: temporal, territorial, institucional e mercadológica.
 
@@ -10,31 +26,35 @@ Este manual descreve as três páginas do painel — **Visão Geral**, **Contrat
 
 ---
 
-## Sumário
+<h2 id="sumario">Sumário</h2>
 
-- [PNCP em Números – Página de Visão Geral](#pncp-em-números--página-de-visão-geral)
-  - [1. Objetivo da página](#1-objetivo-da-página)
-  - [2. Estrutura da página e entendimento inicial da visualização](#2-estrutura-da-página-e-entendimento-inicial-da-visualização)
-  - [3. Indicadores principais](#3-indicadores-principais)
-  - [4. Filtros](#4-filtros)
-  - [5. Conclusão sobre a Página de Visão Geral](#5-conclusão-sobre-a-página-de-visão-geral)
-- [PNCP em Números – Página Contratações Publicadas](#pncp-em-números--página-contratações-publicadas)
-  - [6. Objetivo da página](#6-objetivo-da-página)
-  - [7. Indicadores principais](#7-indicadores-principais)
-  - [8. Filtros](#8-filtros)
-  - [9. Conclusão sobre a Página Contratações Publicadas](#9-conclusão-sobre-a-página-contratações-publicadas)
-- [PNCP em Números – Página Contratações Homologadas](#pncp-em-números--página-contratações-homologadas)
-  - [10. Objetivo da Página](#10-objetivo-da-página)
-  - [11. Indicadores Nacionais Principais](#11-indicadores-nacionais-principais)
-  - [12. Indicadores Internacionais Principais](#12-indicadores-internacionais-principais)
-  - [13. Filtros](#13-filtros)
-  - [14. Conclusão sobre a Página Contratações Homologadas](#14-conclusão-sobre-a-página-contratações-homologadas)
+- <a href="#pncp-em-numeros-pagina-de-visao-geral">PNCP em Números – Página de Visão Geral</a>
+  - <a href="#1-objetivo-da-pagina">1. Objetivo da página</a>
+  - <a href="#2-estrutura-da-pagina-e-entendimento-inicial-da-visualizacao">2. Estrutura da página e entendimento inicial da visualização</a>
+  - <a href="#3-indicadores-principais">3. Indicadores principais</a>
+  - <a href="#4-filtros">4. Filtros</a>
+  - <a href="#5-conclusao-sobre-a-pagina-de-visao-geral">5. Conclusão sobre a Página de Visão Geral</a>
+- <a href="#pncp-em-numeros-pagina-contratacoes-publicadas">PNCP em Números – Página Contratações Publicadas</a>
+  - <a href="#6-objetivo-da-pagina">6. Objetivo da página</a>
+  - <a href="#7-indicadores-principais">7. Indicadores principais</a>
+  - <a href="#8-filtros">8. Filtros</a>
+  - <a href="#9-conclusao-sobre-a-pagina-contratacoes-publicadas">9. Conclusão sobre a Página Contratações Publicadas</a>
+- <a href="#pncp-em-numeros-pagina-contratacoes-homologadas">PNCP em Números – Página Contratações Homologadas</a>
+  - <a href="#10-objetivo-da-pagina">10. Objetivo da Página</a>
+  - <a href="#11-indicadores-nacionais-principais">11. Indicadores Nacionais Principais</a>
+  - <a href="#12-indicadores-internacionais-principais">12. Indicadores Internacionais Principais</a>
+  - <a href="#13-filtros">13. Filtros</a>
+  - <a href="#14-conclusao-sobre-a-pagina-contratacoes-homologadas">14. Conclusão sobre a Página Contratações Homologadas</a>
+- <a href="#15-historico-de-revisoes">15. Histórico de Revisões</a>
 
 ---
 
-## PNCP em Números – Página de Visão Geral
+<h2 id="pncp-em-numeros-pagina-de-visao-geral">PNCP em Números – Página de Visão Geral</h2>
 
-### 1. Objetivo da página
+
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<h3 id="1-objetivo-da-pagina">1. Objetivo da página</h3>
 
 A página Visão Geral tem como função permitir, em poucos segundos:
 
@@ -43,7 +63,10 @@ A página Visão Geral tem como função permitir, em poucos segundos:
 - Identificar padrões por tempo, UF e esfera;
 - Detectar concentração e comportamento das contratações.
 
-### 2. Estrutura da página e entendimento inicial da visualização
+
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<h3 id="2-estrutura-da-pagina-e-entendimento-inicial-da-visualizacao">2. Estrutura da página e entendimento inicial da visualização</h3>
 
 A leitura segue uma lógica de cima para baixo e da esquerda para a direita.
 
@@ -51,9 +74,12 @@ A leitura segue uma lógica de cima para baixo e da esquerda para a direita.
 As cores têm relevância no painel: **verde** representa valores **Publicado**, enquanto **azul** representa valores **Homologado**. Essa convenção de cores é mantida em todas as visualizações do painel.
 :::
 
-### 3. Indicadores principais
 
-#### Cards de KPI's
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<h3 id="3-indicadores-principais">3. Indicadores principais</h3>
+
+<h4 id="cards-de-kpi-s">Cards de KPI's</h4>
 
 Nos KPI's de contratações publicadas temos:
 
@@ -83,7 +109,7 @@ Esses indicadores gerais têm como objetivo fornecer uma visão rápida e consol
 
 ---
 
-#### Tendência temporal
+<h4 id="tendencia-temporal">Tendência temporal</h4>
 
 Aqui temos um gráfico de linha temporal de Valor Total de Contratações x Data de Publicação que compara os valores publicados e homologados ano à ano. Os valores em Reais (R$) podem ser alterados para Quantidade de contratações Publicadas e Homologadas.
 
@@ -93,7 +119,7 @@ A ideia desse gráfico é verificar a evolução financeira e quantitativa das c
 
 ---
 
-#### Detalhamento por tempo e UF
+<h4 id="detalhamento-por-tempo-e-uf">Detalhamento por tempo e UF</h4>
 
 ![Detalhamento por UF - Matriz](_static/img/visao-geral-detalhamento-uf.png)
 
@@ -109,7 +135,7 @@ Essa visualização oferece um comparativo detalhado dos valores financeiros pub
 
 ---
 
-#### Relação entre Publicado vs. Homologado
+<h4 id="relacao-entre-publicado-vs-homologado">Relação entre Publicado vs. Homologado</h4>
 
 Aqui temos um gráfico de dispersão onde cada ponto representa uma UF. Quanto mais à direita e acima, maior o volume financeiro de contratações publicadas e homologadas. Estados próximos da tendência geral apresentam maior equilíbrio entre valores publicados e efetivamente homologados.
 
@@ -127,7 +153,7 @@ Ao clicar em **Total Publicado**, todas as visualizações abaixo passam a exibi
 
 ---
 
-#### Distribuições (mapa)
+<h4 id="distribuicoes-mapa">Distribuições (mapa)</h4>
 
 Aqui temos um mapa coloroplético do Brasil pelo valor publicado, onde a cor mais escura informa o estado (UF) com maior concentração de contratos Publicados.
 
@@ -141,7 +167,7 @@ Essa visualização permite identificar a distribuição geográfica das contrat
 
 ---
 
-#### Comparações por dimensão – Esfera
+<h4 id="comparacoes-por-dimensao-esfera">Comparações por dimensão – Esfera</h4>
 
 Essa visualização é dividida em três que se alternam através de botões onde:
 
@@ -159,7 +185,7 @@ Essa análise permite compreender como as contratações públicas estão distri
 
 ---
 
-#### Comparações por dimensão – Modalidade
+<h4 id="comparacoes-por-dimensao-modalidade">Comparações por dimensão – Modalidade</h4>
 
 Temos aqui um gráfico tree map que plota os valores em reais (R$) pela Modalidade de Contratação (Pregão Eletrônico, Concorrência - Eletrônica, Inexigibilidade, Dispensa, Credenciamento, Concorrência Presencial etc.).
 
@@ -169,7 +195,7 @@ Essa visualização permite identificar quais modalidades de contratação conce
 
 ---
 
-#### Comparações por dimensão – Situação
+<h4 id="comparacoes-por-dimensao-situacao">Comparações por dimensão – Situação</h4>
 
 E por último temos o total publicado por Situação de Contratação. Essa visualização é dividida em três que se alternam através de botões:
 
@@ -185,13 +211,16 @@ Essa análise permite compreender a distribuição das contratações públicas 
 
 ---
 
-### 4. Filtros
+
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<h3 id="4-filtros">4. Filtros</h3>
 
 Com a aplicação dos filtros da página Visão Geral, o usuário consegue transformar a leitura nacional do PNCP em análises progressivamente mais específicas, partindo de um panorama amplo das contratações públicas até recortes detalhados por objeto comprado, fornecedor, modalidade, território e situação administrativa.
 
 Os filtros estão organizados em **3 grupos**:
 
-#### 4.1 Contratação (nível macro) – São Filtros que definem o universo principal
+<h4 id="4-1-contratacao-nivel-macro-sao-filtros-que-definem-o-universo-principal">4.1 Contratação (nível macro) – São Filtros que definem o universo principal</h4>
 
 - ID Contratação
 - Ano / Mês de Publicação (principal filtro)
@@ -206,7 +235,7 @@ O **Ano / Mês de Publicação** é o principal filtro da página. Sempre defina
 
 Os filtros de Contratação permitem definir o universo principal da análise. A partir deles, é possível observar o comportamento das contratações por período, órgão, unidade administrativa, município, UF, modalidade, instrumento convocatório, modo de disputa e situação da contratação. Esses filtros ajudam a responder perguntas como: em quais anos houve maior volume de publicações, quais órgãos concentram mais valores, quais estados apresentam maior participação, quais modalidades são mais utilizadas e qual é a situação predominante das contratações registradas no PNCP. Também permitem aplicar critérios de qualidade, como exclusão de outliers ou registros excluídos, garantindo uma leitura mais consistente dos indicadores.
 
-#### 4.2 Item (nível intermediário) - Refina o tipo de compra
+<h4 id="4-2-item-nivel-intermediario-refina-o-tipo-de-compra">4.2 Item (nível intermediário) - Refina o tipo de compra</h4>
 
 - Material ou serviço
 - Tipo de benefício
@@ -215,7 +244,7 @@ Os filtros de Contratação permitem definir o universo principal da análise. A
 
 Os filtros de Item aprofundam a análise sobre o conteúdo das contratações, permitindo compreender melhor o que está sendo contratado. Com eles, o usuário pode refinar a leitura por material ou serviço, tipo de benefício, critério de julgamento e categoria do item. Esse nível de análise permite identificar padrões de aquisição, grupos de itens mais representativos, categorias com maior concentração de valores e diferenças entre tipos de contratação. Também possibilita investigar se determinados benefícios ou critérios aparecem com maior frequência em certos tipos de item ou modalidades.
 
-#### 4.3 Resultado (nível final) – Com foco no fornecedor
+<h4 id="4-3-resultado-nivel-final-com-foco-no-fornecedor">4.3 Resultado (nível final) – Com foco no fornecedor</h4>
 
 - Fornecedor (CNPJ/CPF / Nome)
 - Porte e natureza jurídica
@@ -231,7 +260,10 @@ Dessa forma, os filtros não funcionam apenas como mecanismos de seleção, mas 
 
 ---
 
-### 5. Conclusão sobre a Página de Visão Geral
+
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<h3 id="5-conclusao-sobre-a-pagina-de-visao-geral">5. Conclusão sobre a Página de Visão Geral</h3>
 
 A Página de Visão Geral do painel PNCP em Números permite construir um entendimento consolidado sobre o comportamento nacional das contratações públicas a partir da relação entre intenção de contratação, homologação, distribuição territorial, perfil institucional e características dos procedimentos utilizados. Mais do que apresentar números absolutos, a página organiza os dados de forma a revelar padrões estruturais do processo de contratação pública registrado no PNCP.
 
@@ -255,9 +287,12 @@ Em síntese, a Página de Visão Geral oferece uma leitura integrada sobre **qua
 
 ---
 
-## PNCP em Números – Página Contratações Publicadas
+<h2 id="pncp-em-numeros-pagina-contratacoes-publicadas">PNCP em Números – Página Contratações Publicadas</h2>
 
-### 6. Objetivo da página
+
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<h3 id="6-objetivo-da-pagina">6. Objetivo da página</h3>
 
 A página Contratações Publicadas tem como objetivo aprofundar a análise sobre as contratações registradas no PNCP no momento da publicação. Diferente da página de Visão Geral, que apresenta um panorama consolidado entre publicado e homologado, esta página é focada exclusivamente na etapa de publicação, ou seja, na intenção formal de contratação registrada no Portal Nacional de Contratações Públicas.
 
@@ -265,9 +300,12 @@ Essa página permite compreender onde as contratações foram publicadas, quais 
 
 ---
 
-### 7. Indicadores principais
 
-#### Cards e KPI's
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<h3 id="7-indicadores-principais">7. Indicadores principais</h3>
+
+<h4 id="cards-e-kpi-s">Cards e KPI's</h4>
 
 Nos KPI's de contratações publicadas temos:
 
@@ -282,7 +320,7 @@ Esses indicadores gerais têm como objetivo fornecer uma visão rápida e consol
 
 ---
 
-#### Distribuições (mapa)
+<h4 id="distribuicoes-mapa-2">Distribuições (mapa)</h4>
 
 Aqui temos um mapa coloroplético do Brasil com o valor publicado por UF do órgão contratante. A cor mais escura indica as Unidades Federativas com maior concentração financeira de contratações publicadas. Quanto mais intensa a tonalidade apresentada no mapa, maior é o volume financeiro associado à respectiva Unidade Federativa.
 
@@ -292,7 +330,7 @@ Essa visualização permite identificar a distribuição geográfica das contrat
 
 ---
 
-#### Matriz por UF e Município
+<h4 id="matriz-por-uf-e-municipio">Matriz por UF e Município</h4>
 
 Em seguida, a página apresenta uma matriz com o valor publicado, permitindo o detalhamento por UF do Órgão → Município do Órgão.
 
@@ -304,7 +342,7 @@ A matriz é especialmente útil para análises locais, pois permite localizar co
 
 ---
 
-#### Tabela de Contratações por Órgão Contratante
+<h4 id="tabela-de-contratacoes-por-orgao-contratante">Tabela de Contratações por Órgão Contratante</h4>
 
 A visualização apresenta uma tabela de detalhamento das contratações por órgão contratante. Essa tabela exibe informações operacionais importantes, como:
 
@@ -333,7 +371,7 @@ Essa funcionalidade ajuda a explicar, de forma mais detalhada, o impacto da marg
 
 ---
 
-#### Tendência temporal das contratações publicadas
+<h4 id="tendencia-temporal-das-contratacoes-publicadas">Tendência temporal das contratações publicadas</h4>
 
 A visualização apresenta um gráfico de linha de Valor Total de Contratações x Data de Publicação, mostrando a evolução dos valores publicados ao longo dos anos. A visualização em reais (R$) pode ser alternada para quantidade de contratações publicadas.
 
@@ -343,7 +381,7 @@ Essa análise permite acompanhar a evolução temporal das publicações no PNCP
 
 ---
 
-#### Tipo de Benefício
+<h4 id="tipo-de-beneficio">Tipo de Benefício</h4>
 
 A visualização de Tipo de Benefício apresenta a distribuição das contratações publicadas conforme os benefícios associados aos itens. O gráfico possui duas formas de leitura:
 
@@ -358,7 +396,7 @@ Essa análise permite compreender quais tipos de benefício aparecem com maior r
 
 ---
 
-#### Portal de Contratação
+<h4 id="portal-de-contratacao">Portal de Contratação</h4>
 
 O gráfico de Portal de Contratação apresenta o valor publicado por portal ou sistema de origem.
 
@@ -368,7 +406,7 @@ Essa visualização permite identificar quais portais concentram maior volume fi
 
 ---
 
-#### Instrumento Convocatório
+<h4 id="instrumento-convocatorio">Instrumento Convocatório</h4>
 
 A visualização de Instrumento Convocatório é dividida em duas formas de análise:
 
@@ -383,7 +421,7 @@ Essa análise permite observar quais instrumentos são mais utilizados nas contr
 
 ---
 
-#### Critério de Julgamento
+<h4 id="criterio-de-julgamento">Critério de Julgamento</h4>
 
 A visualização de Critério de Julgamento também é dividida em duas formas de leitura:
 
@@ -398,7 +436,7 @@ Essa análise permite identificar quais critérios de julgamento concentram os m
 
 ---
 
-#### Modalidade de Contratação
+<h4 id="modalidade-de-contratacao">Modalidade de Contratação</h4>
 
 A página apresenta um gráfico do tipo treemap com os valores publicados por modalidade de contratação, como:
 
@@ -416,7 +454,7 @@ Essa visualização permite identificar quais modalidades concentram os maiores 
 
 ---
 
-#### Modo de Disputa
+<h4 id="modo-de-disputa">Modo de Disputa</h4>
 
 Por fim, a página apresenta as visualizações de Modo de Disputa, divididas em duas formas:
 
@@ -431,11 +469,14 @@ Essa análise permite compreender como as contratações publicadas se distribue
 
 ---
 
-### 8. Filtros
+
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<h3 id="8-filtros">8. Filtros</h3>
 
 Os filtros da página estão organizados em dois grupos principais: **Contratação** e **Item**.
 
-#### 8.1 Filtros de Contratação
+<h4 id="8-1-filtros-de-contratacao">8.1 Filtros de Contratação</h4>
 
 Os filtros de contratação definem o universo principal da análise. Eles permitem recortar os dados por identificação da contratação, período de publicação, órgão responsável, localização, modalidade, instrumento, situação e indicadores de qualidade.
 
@@ -464,7 +505,7 @@ Os filtros de contratação definem o universo principal da análise. Eles permi
 
 Esses filtros permitem analisar o comportamento das contratações publicadas a partir de diferentes perspectivas institucionais, territoriais e procedimentais. Com eles, é possível responder perguntas como: quais órgãos mais publicaram contratações, em quais estados houve maior concentração de valores, quais modalidades foram mais utilizadas, quais instrumentos convocatórios predominaram e quais contratações foram classificadas como outliers ou excluídas.
 
-#### 8.2 Filtros de Item
+<h4 id="8-2-filtros-de-item">8.2 Filtros de Item</h4>
 
 Os filtros de item permitem refinar a análise de acordo com as características dos bens ou serviços previstos nas contratações publicadas.
 
@@ -487,7 +528,10 @@ Esses filtros aprofundam a leitura sobre o conteúdo das contratações, permiti
 
 ---
 
-### 9. Conclusão sobre a Página Contratações Publicadas
+
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<h3 id="9-conclusao-sobre-a-pagina-contratacoes-publicadas">9. Conclusão sobre a Página Contratações Publicadas</h3>
 
 A Página Contratações Publicadas permite compreender o comportamento das contratações públicas no momento da publicação, ou seja, na fase em que a administração pública formaliza sua intenção de contratar bens ou serviços. A partir dela, é possível analisar onde as contratações são publicadas, quais órgãos concentram maior volume, quais modalidades e instrumentos são mais utilizados, quais critérios de julgamento predominam e quais tipos de benefícios estão associados aos itens.
 
@@ -499,9 +543,12 @@ Ela transforma os dados de publicação em uma leitura organizada sobre a inten�
 
 ---
 
-## PNCP em Números – Página Contratações Homologadas
+<h2 id="pncp-em-numeros-pagina-contratacoes-homologadas">PNCP em Números – Página Contratações Homologadas</h2>
 
-### 10. Objetivo da Página
+
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<h3 id="10-objetivo-da-pagina">10. Objetivo da Página</h3>
 
 A página Contratações Homologadas tem como objetivo apresentar a etapa posterior à publicação das contratações públicas: o momento em que os processos avançam para resultado, com valores homologados e identificação dos fornecedores contratados. Enquanto a página de Contratações Publicadas mostra a intenção inicial de contratação, esta página aprofunda a análise sobre aquilo que foi efetivamente homologado, permitindo observar valores, quantidades, fornecedores, natureza jurídica, porte empresarial, origem nacional ou internacional e aplicação de benefícios.
 
@@ -509,9 +556,12 @@ Essa página é especialmente importante para compreender a relação entre o va
 
 ---
 
-### 11. Indicadores Nacionais Principais
 
-#### Cards e KPI's
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<h3 id="11-indicadores-nacionais-principais">11. Indicadores Nacionais Principais</h3>
+
+<h4 id="cards-e-kpi-s-2">Cards e KPI's</h4>
 
 No topo da página são apresentados os KPIs gerais das contratações homologadas:
 
@@ -526,7 +576,7 @@ Esses indicadores apresentam uma visão consolidada do volume de contratações 
 
 ---
 
-#### Indicadores específicos — ME/EPP
+<h4 id="indicadores-especificos-me-epp">Indicadores específicos — ME/EPP</h4>
 
 Em seguida, a página apresenta KPIs específicos relacionados às contratações homologadas com participação de ME/EPP.
 
@@ -547,7 +597,7 @@ Esses indicadores permitem avaliar a participação das microempresas e empresas
 
 ---
 
-#### Alternância entre Fornecedores Nacionais e Internacionais
+<h4 id="alternancia-entre-fornecedores-nacionais-e-internacionais">Alternância entre Fornecedores Nacionais e Internacionais</h4>
 
 A página possui uma divisão por botões que permite alternar entre:
 
@@ -566,7 +616,7 @@ Essa alternância permite comparar a participação nacional e internacional nas
 
 ---
 
-#### Distribuição territorial — Mapa coroplético
+<h4 id="distribuicao-territorial-mapa-coropletico">Distribuição territorial — Mapa coroplético</h4>
 
 No modo de fornecedores nacionais, a página apresenta um mapa coroplético do Brasil com o valor homologado por UF do órgão contratante. A cor mais escura representa as Unidades Federativas com maior concentração financeira de contratações homologadas.
 
@@ -576,7 +626,7 @@ Essa visualização permite compreender a distribuição geográfica dos valores
 
 ---
 
-#### Matriz por UF e Município
+<h4 id="matriz-por-uf-e-municipio-2">Matriz por UF e Município</h4>
 
 A página apresenta uma matriz com o valor homologado, permitindo o detalhamento por UF Órgão e Município Órgão.
 
@@ -586,7 +636,7 @@ Essa visualização possibilita aprofundar a análise territorial, partindo da v
 
 ---
 
-#### Maiores fornecedores contratados
+<h4 id="maiores-fornecedores-contratados">Maiores fornecedores contratados</h4>
 
 Logo abaixo, a página apresenta um gráfico de barras horizontais com os maiores fornecedores nacionais por valor homologado em reais.
 
@@ -596,7 +646,7 @@ Essa visualização permite identificar os fornecedores que concentram os maiore
 
 ---
 
-#### Tendência temporal das contratações homologadas
+<h4 id="tendencia-temporal-das-contratacoes-homologadas">Tendência temporal das contratações homologadas</h4>
 
 Temos agora um gráfico de linha de Valor Total de Contratações x Data de Publicação, mostrando a evolução dos valores homologados ao longo dos anos. A visualização em reais (R$) pode ser alternada para quantidade de contratações homologadas.
 
@@ -606,7 +656,7 @@ Essa análise permite acompanhar a evolução histórica das contratações homo
 
 ---
 
-#### Natureza jurídica dos fornecedores
+<h4 id="natureza-juridica-dos-fornecedores">Natureza jurídica dos fornecedores</h4>
 
 A página conta com um gráfico de barras horizontais com o valor homologado por natureza jurídica dos fornecedores.
 
@@ -616,7 +666,7 @@ Essa visualização permite compreender quais tipos de natureza jurídica concen
 
 ---
 
-#### Situação da contratação
+<h4 id="situacao-da-contratacao">Situação da contratação</h4>
 
 A visualização de Situação da Contratação é dividida em duas formas de análise:
 
@@ -639,7 +689,7 @@ Essa análise permite compreender o estado administrativo das contratações hom
 
 ---
 
-#### Tipo de benefício
+<h4 id="tipo-de-beneficio-2">Tipo de benefício</h4>
 
 A página apresenta o gráfico de Tipo de Benefício associado ao valor da contratação. Essa visualização é dividida em duas formas:
 
@@ -654,7 +704,7 @@ Essa análise permite observar a distribuição dos valores homologados conforme
 
 ---
 
-#### Porte do fornecedor
+<h4 id="porte-do-fornecedor">Porte do fornecedor</h4>
 
 A visualização de Porte do Fornecedor também é dividida em duas formas:
 
@@ -669,7 +719,7 @@ Essa análise permite compreender como o valor homologado se distribui entre for
 
 ---
 
-#### Tabela de contratação por fornecedor contratado
+<h4 id="tabela-de-contratacao-por-fornecedor-contratado">Tabela de contratação por fornecedor contratado</h4>
 
 Por último, a página apresenta uma tabela com detalhamento das contratações por fornecedor contratado. A tabela exibe informações como:
 
@@ -697,13 +747,16 @@ Essa funcionalidade permite detalhar o uso da margem de preferência sem sobreca
 
 ---
 
-### 12. Indicadores Internacionais Principais
+
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<h3 id="12-indicadores-internacionais-principais">12. Indicadores Internacionais Principais</h3>
 
 Ao selecionar o botão **Contratações de Fornecedores Internacionais**, a página passa a exibir exclusivamente os valores e quantidades relacionados às contratações homologadas com fornecedores estrangeiros. Essa visualização permite analisar a participação internacional nas contratações públicas registradas no PNCP, destacando os países de origem, os principais fornecedores internacionais e a evolução temporal dos valores homologados.
 
 ---
 
-#### Distribuição territorial — Mapa coroplético (Internacional)
+<h4 id="distribuicao-territorial-mapa-coropletico-internacional">Distribuição territorial — Mapa coroplético (Internacional)</h4>
 
 No modo internacional, é apresentado um mapa coroplético mundial pelo valor homologado.
 
@@ -713,7 +766,7 @@ Nesse mapa, a cor mais escura indica os países com maior concentração finance
 
 ---
 
-#### Tabela País Valores Homologados
+<h4 id="tabela-pais-valores-homologados">Tabela País Valores Homologados</h4>
 
 Em seguida, a página apresenta uma tabela com o valor homologado por país, permitindo uma leitura mais objetiva e comparativa da participação de cada país no total contratado.
 
@@ -723,7 +776,7 @@ Essa tabela complementa o mapa ao apresentar os valores de forma ordenada e deta
 
 ---
 
-#### Maiores fornecedores contratados (Internacional)
+<h4 id="maiores-fornecedores-contratados-internacional">Maiores fornecedores contratados (Internacional)</h4>
 
 Logo abaixo, há um gráfico de barras horizontais com os maiores fornecedores internacionais por valor homologado em reais (R$).
 
@@ -733,7 +786,7 @@ Essa visualização permite identificar quais fornecedores estrangeiros concentr
 
 ---
 
-#### Tendência temporal das contratações homologadas (Internacional)
+<h4 id="tendencia-temporal-das-contratacoes-homologadas-internacional">Tendência temporal das contratações homologadas (Internacional)</h4>
 
 Por fim, a página apresenta um gráfico de linha de Valor Total de Contratações x Data de Publicação, permitindo acompanhar a evolução dos valores homologados internacionais ao longo dos anos.
 
@@ -745,11 +798,14 @@ Essa seção permite compreender a dimensão internacional das contratações p�
 
 ---
 
-### 13. Filtros
+
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<h3 id="13-filtros">13. Filtros</h3>
 
 Os filtros da página estão organizados em três grupos: **Contratação**, **Item** e **Resultado**.
 
-#### 13.1 Filtros de Contratação
+<h4 id="13-1-filtros-de-contratacao">13.1 Filtros de Contratação</h4>
 
 Os filtros de contratação definem o universo principal da análise, permitindo recortar os dados por período, órgão contratante, localização, modalidade, instrumento, situação da contratação e indicadores de qualidade.
 
@@ -776,7 +832,7 @@ Os filtros de contratação definem o universo principal da análise, permitindo
 
 Esses filtros permitem delimitar o conjunto de contratações homologadas a partir de critérios institucionais, territoriais, temporais e procedimentais. Com eles, o usuário pode investigar, por exemplo, quais órgãos homologaram maiores valores, quais estados concentram mais contratações homologadas, quais modalidades tiveram maior volume contratado e como os valores se distribuem entre diferentes períodos.
 
-#### 13.2 Filtros de Item
+<h4 id="13-2-filtros-de-item">13.2 Filtros de Item</h4>
 
 Os filtros de item permitem refinar a análise a partir das características dos bens ou serviços vinculados às contratações homologadas.
 
@@ -797,7 +853,7 @@ Os filtros de item permitem refinar a análise a partir das características dos
 
 Esses filtros ajudam a compreender o que foi contratado, permitindo observar os tipos de item, categorias, critérios de julgamento e benefícios associados aos resultados homologados. Eles possibilitam uma leitura mais detalhada do conteúdo das contratações, indo além do órgão e do fornecedor.
 
-#### 13.3 Filtros de Resultado
+<h4 id="13-3-filtros-de-resultado">13.3 Filtros de Resultado</h4>
 
 Os filtros de resultado concentram-se no fornecedor e nas características da homologação.
 
@@ -827,7 +883,10 @@ Esses filtros permitem analisar o resultado das contratações sob a perspectiva
 
 ---
 
-### 14. Conclusão sobre a Página Contratações Homologadas
+
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<h3 id="14-conclusao-sobre-a-pagina-contratacoes-homologadas">14. Conclusão sobre a Página Contratações Homologadas</h3>
 
 A Página Contratações Homologadas permite compreender o comportamento das contratações públicas na etapa de resultado, evidenciando os valores efetivamente homologados, a quantidade de contratações e itens envolvidos, os principais fornecedores, o perfil jurídico e o porte das empresas contratadas, além da participação de fornecedores nacionais e internacionais.
 
@@ -841,8 +900,16 @@ Ela complementa a leitura da página de Contratações Publicadas ao deslocar o 
 
 ---
 
-## Histórico de Revisões
+<h2 id="15-historico-de-revisoes">15. Histórico de Revisões</h2>
 
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
 | 2026-05-14 | 1.0 | Versão inicial | Bruno Almeida |
+
+<a href="#sumario">⬆️ Voltar ao sumário</a>
+
+<div class="bottom-print-bar" style="text-align: right; margin: 20px 0;">
+  <button onclick="window.print()" style="background-color: #0056b3; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+    🖨️ Imprimir ou baixar esta página
+  </button>
+</div>
