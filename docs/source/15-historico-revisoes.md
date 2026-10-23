@@ -16,7 +16,7 @@
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
 | 2026-05-14 | 1.0 | Versão inicial | Bruno Almeida |
-| 2026-10-23 | 1.1 | Publicação em plataforma web (Read the Docs), inclusão de notas explicativas, escopo das abas do painel, identificação da fonte de dados (Lei nº 14.133/2021), endereço de acesso e padronização terminológica | Equipe DELOG/SEGES/MGI |
+| 2026-10-23 | 1.1 | Publicação em plataforma web (Read the Docs), inclusão de notas explicativas, escopo das abas do painel, identificação da fonte de dados (Lei nº 14.133/2021), endereço de acesso e padronização terminológica | Páblio de Sousa Lourenço |
 
 <a href="#">⬆️ Voltar ao topo</a>
 
