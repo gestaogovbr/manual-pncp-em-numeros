@@ -13,12 +13,16 @@
 
 # 1. Objetivo da página
 
-A página Visão Geral tem como função permitir, em poucos segundos:
+O **Painel PNCP em Números** tem por finalidade disponibilizar, de forma aberta e acessível, uma visão consolidada das contratações públicas registradas no [Portal Nacional de Contratações Públicas (PNCP)](https://www.gov.br/pncp/pt-br), permitindo acompanhar o volume de contratações publicadas e homologadas no país, comparar a intenção de contratação com o resultado efetivamente contratado e identificar padrões por tempo, território, esfera e modalidade.
 
-- Entender o volume total de contratações no país;
-- Comparar Publicado vs. Homologado;
-- Identificar padrões por tempo, UF e esfera;
-- Detectar concentração e comportamento das contratações.
+A página **Visão Geral** tem como função permitir, em poucos segundos:
+
+- entender o volume total de contratações no país;
+- comparar o valor publicado com o valor homologado;
+- identificar padrões por tempo, UF e esfera governamental;
+- detectar concentrações e o comportamento geral das contratações.
+
+**Fonte dos dados:** os indicadores refletem os registros de contratações públicas publicados no PNCP nos termos da [Lei nº 14.133, de 1º de abril de 2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm), atualizados conforme as informações enviadas pelos órgãos e entidades contratantes ao Portal.
 
 <a href="#">⬆️ Voltar ao topo</a>
 

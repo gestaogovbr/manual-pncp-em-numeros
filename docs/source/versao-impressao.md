@@ -17,12 +17,18 @@
 > **Público-alvo:** Analistas, gestores e demais usuários do painel PNCP em Números  
 > **Objetivo:** Guiar o usuário na leitura, interpretação e análise dos indicadores e visualizações do painel PNCP em Números.
 
-**VERSÃO 1.0 – Mai/26**  
+**VERSÃO 1.1 – Out/26**  
 Ministério da Gestão e da Inovação em Serviços Públicos – MGI
 
-O **PNCP em Números** é um painel desenvolvido em Power BI que consolida dados do Portal Nacional de Contratações Públicas (PNCP), permitindo a análise de contratações públicas brasileiras sob diferentes perspectivas: temporal, territorial, institucional e mercadológica.
+O **Painel PNCP em Números** é uma ferramenta de transparência ativa que consolida, em formato visual e interativo, os dados das contratações públicas registradas no [Portal Nacional de Contratações Públicas (PNCP)](https://www.gov.br/pncp/pt-br) nos termos da [Lei nº 14.133, de 1º de abril de 2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm) (Lei de Licitações e Contratos Administrativos). O painel permite analisar as contratações públicas brasileiras sob diferentes perspectivas: temporal, territorial, institucional e mercadológica.
 
-Este manual descreve as três páginas do painel — **Visão Geral**, **Contratações Publicadas** e **Contratações Homologadas** —, detalhando os indicadores, visualizações e filtros disponíveis em cada uma, e orientando o usuário sobre como extrair as análises mais relevantes.
+* **Endereço de acesso ao painel:** [https://www.gov.br/pncp/pt-br/acesso-a-informacao/painel-pncp-em-numeros-1](https://www.gov.br/pncp/pt-br/acesso-a-informacao/painel-pncp-em-numeros-1)
+
+:::{note}
+**Escopo desta versão**
+
+Esta versão do manual descreve as páginas **Visão Geral**, **Contratações Publicadas** e **Contratações Homologadas** do Painel PNCP em Números. As demais abas disponíveis na página do painel — **[Exportar Dados](https://www.gov.br/pncp/pt-br/acesso-a-informacao/painel-pncp-em-numeros-1/exportar-dados)**, **[Estados e Municípios](https://www.gov.br/pncp/pt-br/acesso-a-informacao/painel-pncp-em-numeros-1/estados_municipios)** e **[Órgãos Sisg](https://www.gov.br/pncp/pt-br/acesso-a-informacao/painel-pncp-em-numeros-1/orgaos_sisg)** — serão objeto de documentação em versão específica.
+:::
 
 ---
 
@@ -57,12 +63,16 @@ Este manual descreve as três páginas do painel — **Visão Geral**, **Contrat
 
 <h3 id="1-objetivo-da-pagina">1. Objetivo da página</h3>
 
-A página Visão Geral tem como função permitir, em poucos segundos:
+O **Painel PNCP em Números** tem por finalidade disponibilizar, de forma aberta e acessível, uma visão consolidada das contratações públicas registradas no [Portal Nacional de Contratações Públicas (PNCP)](https://www.gov.br/pncp/pt-br), permitindo acompanhar o volume de contratações publicadas e homologadas no país, comparar a intenção de contratação com o resultado efetivamente contratado e identificar padrões por tempo, território, esfera e modalidade.
 
-- Entender o volume total de contratações no país;
-- Comparar Publicado vs. Homologado;
-- Identificar padrões por tempo, UF e esfera;
-- Detectar concentração e comportamento das contratações.
+A página **Visão Geral** tem como função permitir, em poucos segundos:
+
+- entender o volume total de contratações no país;
+- comparar o valor publicado com o valor homologado;
+- identificar padrões por tempo, UF e esfera governamental;
+- detectar concentrações e o comportamento geral das contratações.
+
+**Fonte dos dados:** os indicadores refletem os registros de contratações públicas publicados no PNCP nos termos da [Lei nº 14.133, de 1º de abril de 2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm), atualizados conforme as informações enviadas pelos órgãos e entidades contratantes ao Portal.
 
 <a href="#sumario">⬆️ Voltar ao sumário</a>
 
@@ -78,9 +88,9 @@ As cores têm relevância no painel: **verde** representa valores **Publicado**,
 
 <h3 id="3-indicadores-principais">3. Indicadores principais</h3>
 
-<h4>Cards de KPI's</h4>
+<h4>Indicadores-chave (KPIs)</h4>
 
-Nos KPI's de contratações publicadas temos:
+Nos KPIs de contratações publicadas temos:
 
 - Valor Publicado (Publicado - Vlr R$);
 - Quantidade de itens Publicados (Publicado - Qtd Itens);
@@ -89,7 +99,7 @@ Nos KPI's de contratações publicadas temos:
 
 ![KPIs de Contratações Publicadas](_static/img/visao-geral-kpi-publicadas.png)
 
-Enquanto nos KPI's de contratações homologadas temos:
+Enquanto nos KPIs de contratações homologadas temos:
 
 - Valor Homologado (Homologado - Vlr R$);
 - Quantidade de itens Homologados (Homologado - Qtd Itens);
@@ -132,11 +142,11 @@ Essa visualização oferece um comparativo detalhado dos valores financeiros pub
 
 ---
 
-<h4>Relação entre Publicado vs. Homologado</h4>
+<h4>Relação entre publicado e homologado</h4>
 
 Aqui temos um gráfico de dispersão onde cada ponto representa uma UF. Quanto mais à direita e acima, maior o volume financeiro de contratações publicadas e homologadas. Estados próximos da tendência geral apresentam maior equilíbrio entre valores publicados e efetivamente homologados.
 
-![Dispersão Publicado vs. Homologado por UF](_static/img/visao-geral-dispersao-publicado-vs-homologado.png)
+![Dispersão entre publicado e homologado por UF](_static/img/visao-geral-dispersao-publicado-vs-homologado.png)
 
 Essa visualização permite comparar o comportamento financeiro das contratações publicadas e homologadas entre as Unidades Federativas, possibilitando identificar estados com maior volume de contratações, padrões de concentração regional e diferenças entre os valores inicialmente publicados e os efetivamente homologados. Quanto mais próximo um estado estiver da tendência geral do gráfico, maior tende a ser a aderência entre os valores publicados e homologados, enquanto desvios mais acentuados podem indicar comportamentos específicos ou diferenças relevantes na execução das contratações públicas.
 
@@ -301,9 +311,9 @@ Essa página permite compreender onde as contratações foram publicadas, quais 
 
 <h3 id="7-indicadores-principais">7. Indicadores principais</h3>
 
-<h4>Cards e KPI's</h4>
+<h4>Indicadores-chave (KPIs)</h4>
 
-Nos KPI's de contratações publicadas temos:
+Nos KPIs de contratações publicadas temos:
 
 - Valor Publicado (Publicado - Vlr R$);
 - Quantidade de itens Publicados (Publicado - Qtd Itens);
@@ -548,7 +558,7 @@ Essa página é especialmente importante para compreender a relação entre o va
 
 <h3 id="11-indicadores-nacionais-principais">11. Indicadores Nacionais Principais</h3>
 
-<h4>Cards e KPI's</h4>
+<h4>Indicadores-chave (KPIs)</h4>
 
 No topo da página são apresentados os KPIs gerais das contratações homologadas:
 
@@ -892,6 +902,7 @@ Ela complementa a leitura da página de Contratações Publicadas ao deslocar o 
 | Data | Versão | Descrição | Autor |
 |---|---|---|---|
 | 2026-05-14 | 1.0 | Versão inicial | Bruno Almeida |
+| 2026-10-23 | 1.1 | Publicação em plataforma web (Read the Docs), inclusão de notas explicativas, escopo das abas do painel, identificação da fonte de dados (Lei nº 14.133/2021), endereço de acesso e padronização terminológica | Equipe DELOG/SEGES/MGI |
 
 
 <a href="#sumario">⬆️ Voltar ao sumário</a>

@@ -17,8 +17,8 @@ sys.path.insert(0, os.path.abspath('.'))
 project = 'PNCP em Números'
 copyright = '2026, Ministério da Gestão e Inovação em Serviços Públicos - MGI'
 author = 'COTIN/CGGES/DELOG/SEGES/MGI'
-release = '1.0'
-version = '1.0'
+release = '1.1'
+version = '1.1'
 
 # ── Extensões ─────────────────────────────────────────────────────────────────
 extensions = [

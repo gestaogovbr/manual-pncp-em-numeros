@@ -13,9 +13,9 @@
 
 # 7. Indicadores principais
 
-## Cards e KPI's
+## Indicadores-chave (KPIs)
 
-Nos KPI's de contratações publicadas temos:
+Nos KPIs de contratações publicadas temos:
 
 - Valor Publicado (Publicado - Vlr R$);
 - Quantidade de itens Publicados (Publicado - Qtd Itens);

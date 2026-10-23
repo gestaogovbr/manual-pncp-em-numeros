@@ -13,7 +13,7 @@
 
 # 11. Indicadores Nacionais Principais
 
-## Cards e KPI's
+## Indicadores-chave (KPIs)
 
 No topo da página são apresentados os KPIs gerais das contratações homologadas:
 

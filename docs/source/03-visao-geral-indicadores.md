@@ -13,9 +13,9 @@
 
 # 3. Indicadores principais
 
-## Cards de KPI's
+## Indicadores-chave (KPIs)
 
-Nos KPI's de contratações publicadas temos:
+Nos KPIs de contratações publicadas temos:
 
 - Valor Publicado (Publicado - Vlr R$);
 - Quantidade de itens Publicados (Publicado - Qtd Itens);
@@ -24,7 +24,7 @@ Nos KPI's de contratações publicadas temos:
 
 ![KPIs de Contratações Publicadas](_static/img/visao-geral-kpi-publicadas.png)
 
-Enquanto nos KPI's de contratações homologadas temos:
+Enquanto nos KPIs de contratações homologadas temos:
 
 - Valor Homologado (Homologado - Vlr R$);
 - Quantidade de itens Homologados (Homologado - Qtd Itens);
@@ -67,11 +67,11 @@ Essa visualização oferece um comparativo detalhado dos valores financeiros pub
 
 ---
 
-## Relação entre Publicado vs. Homologado
+## Relação entre publicado e homologado
 
 Aqui temos um gráfico de dispersão onde cada ponto representa uma UF. Quanto mais à direita e acima, maior o volume financeiro de contratações publicadas e homologadas. Estados próximos da tendência geral apresentam maior equilíbrio entre valores publicados e efetivamente homologados.
 
-![Dispersão Publicado vs. Homologado por UF](_static/img/visao-geral-dispersao-publicado-vs-homologado.png)
+![Dispersão entre publicado e homologado por UF](_static/img/visao-geral-dispersao-publicado-vs-homologado.png)
 
 Essa visualização permite comparar o comportamento financeiro das contratações publicadas e homologadas entre as Unidades Federativas, possibilitando identificar estados com maior volume de contratações, padrões de concentração regional e diferenças entre os valores inicialmente publicados e os efetivamente homologados. Quanto mais próximo um estado estiver da tendência geral do gráfico, maior tende a ser a aderência entre os valores publicados e homologados, enquanto desvios mais acentuados podem indicar comportamentos específicos ou diferenças relevantes na execução das contratações públicas.
 

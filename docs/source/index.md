@@ -17,24 +17,30 @@
 > **Público-alvo:** Analistas, gestores e demais usuários do painel PNCP em Números  
 > **Objetivo:** Guiar o usuário na leitura, interpretação e análise dos indicadores e visualizações do painel PNCP em Números.
 
-**VERSÃO 1.0 – Mai/26**  
+**VERSÃO 1.1 – Out/26**  
 Ministério da Gestão e da Inovação em Serviços Públicos – MGI
 
 ---
 
 ## Apresentação
 
-O **PNCP em Números** é um painel desenvolvido em Power BI que consolida dados do [Portal Nacional de Contratações Públicas (PNCP)](https://pncp.gov.br), permitindo a análise de contratações públicas brasileiras sob diferentes perspectivas: temporal, territorial, institucional e mercadológica.
+O **Painel PNCP em Números** é uma ferramenta de transparência ativa que consolida, em formato visual e interativo, os dados das contratações públicas registradas no [Portal Nacional de Contratações Públicas (PNCP)](https://www.gov.br/pncp/pt-br) nos termos da [Lei nº 14.133, de 1º de abril de 2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm) (Lei de Licitações e Contratos Administrativos). O painel permite analisar as contratações públicas brasileiras sob diferentes perspectivas: temporal, territorial, institucional e mercadológica.
 
-Este manual documenta as três páginas do painel e orienta o usuário sobre como interpretar os indicadores e extrair análises relevantes.
+* **Endereço de acesso ao painel:** [https://www.gov.br/pncp/pt-br/acesso-a-informacao/painel-pncp-em-numeros-1](https://www.gov.br/pncp/pt-br/acesso-a-informacao/painel-pncp-em-numeros-1)
 
 ## Páginas do Painel
 
 | Página | O que analisa |
 |---|---|
-| **Visão Geral** | Panorama nacional: KPIs, tendência temporal, mapas, esfera, modalidade e situação das contratações |
-| **Contratações Publicadas** | Intenção de contratação: órgãos, modalidades, instrumentos, critérios e filtros da etapa de publicação |
-| **Contratações Homologadas** | Resultado efetivo: fornecedores, valores homologados, porte, natureza jurídica e contratações internacionais |
+| **[Visão Geral](https://www.gov.br/pncp/pt-br/acesso-a-informacao/painel-pncp-em-numeros-1)** | Panorama nacional: indicadores-chave (KPIs), tendência temporal, mapas, esfera, modalidade e situação das contratações |
+| **[Contratações Publicadas](https://www.gov.br/pncp/pt-br/acesso-a-informacao/painel-pncp-em-numeros-1/contratacoes-publicadas)** | Intenção de contratação: órgãos, modalidades, instrumentos, critérios e filtros da etapa de publicação |
+| **[Contratações Homologadas](https://www.gov.br/pncp/pt-br/acesso-a-informacao/painel-pncp-em-numeros-1/contratacoes-homologadas)** | Resultado efetivo: fornecedores, valores homologados, porte (ME/EPP), natureza jurídica e contratações internacionais |
+
+:::{note}
+**Escopo desta versão**
+
+Esta versão do manual descreve as páginas **Visão Geral**, **Contratações Publicadas** e **Contratações Homologadas** do Painel PNCP em Números. As demais abas disponíveis na página do painel — **[Exportar Dados](https://www.gov.br/pncp/pt-br/acesso-a-informacao/painel-pncp-em-numeros-1/exportar-dados)**, **[Estados e Municípios](https://www.gov.br/pncp/pt-br/acesso-a-informacao/painel-pncp-em-numeros-1/estados_municipios)** e **[Órgãos Sisg](https://www.gov.br/pncp/pt-br/acesso-a-informacao/painel-pncp-em-numeros-1/orgaos_sisg)** — serão objeto de documentação em versão específica.
+:::
 
 ---
 
